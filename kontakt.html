@@ -8,6 +8,32 @@
     <title>Kontakt - ChillZone</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        label {
+            margin-top: 10px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        input, textarea {
+            margin-bottom: 20px;
+            padding: 10px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 150px;
+            vertical-align: top;
+        }
+    </style>
 </head>
 <body>
     <header style="background: url('images/header-background2.png') no-repeat center center; background-size: cover; color: #fff; padding: 40px 0; text-align: center; position: relative;">
@@ -29,7 +55,7 @@
     <section id="contact">
         <h2>Skontaktuj się z nami</h2>
         <p>Skontaktuj się z nami, aby uzyskać więcej informacji na temat naszych usług lub poprosić o wycenę. Nasz zespół jest gotowy odpowiedzieć na wszystkie Twoje pytania i doradzić najlepsze rozwiązania w zakresie klimatyzacji.</p>
-        <form action="submit_form.php" method="POST">
+        <form action="https://formspree.io/f/xeojqbwn" method="POST">
             <label for="name">Imię i nazwisko:</label>
             <input type="text" id="name" name="name" required>
             
@@ -37,7 +63,7 @@
             <input type="email" id="email" name="email" required>
             
             <label for="message">Wiadomość:</label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea id="message" name="message" rows="10" cols="50" required></textarea>
             
             <button type="submit">Wyślij</button>
         </form>
