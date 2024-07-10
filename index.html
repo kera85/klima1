@@ -3,280 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Oferta usług klimatyzacyjnych firmy ChillZone. Dowiedz się więcej o naszych usługach instalacyjnych, serwisowych i naprawczych.">
-    <meta name="keywords" content="usługi klimatyzacyjne, ChillZone, instalacja klimatyzacji, serwis klimatyzacji, naprawa klimatyzacji, klimatyzacja Legionowo, klimatyzacja okolice">
-    <title>Usługi - Klimatyzacja Legionowo | ChillZone</title>
+    <meta name="description" content="Profesjonalna instalacja klimatyzacji w Warszawie i okolicach. Skontaktuj się z nami i poproś o wycenę montażu klimatyzacji.">
+    <meta name="keywords" content="klimatyzacja Warszawa, klimatyzacja okolice, instalacja klimatyzacji, montaż klimatyzacji">
+    <title>Instalacja Klimatyzacji - Warszawa i okolice</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-
-        header {
-            background: url('images/header-background2.png') no-repeat center center;
-            background-size: cover;
-            color: #fff;
-            padding: 40px 0;
-            text-align: center;
-            position: relative;
-        }
-
-        header .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
-        }
-
-        header h1 {
-            position: relative;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 36px;
-            margin: 0;
-            padding: 10px 20px;
-            z-index: 2;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 20px 0 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            padding: 5px 10px;
-            border-radius: 3px;
-            transition: background 0.3s;
-        }
-
-        nav ul li a:hover {
-            background: rgba(255, 255, 255, 0.2);
-        }
-
-        section#services {
-            padding: 20px;
-            text-align: center;
-        }
-
-        section#services h2 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-
-        section#services ul {
-            list-style: none;
-            padding: 0;
-            margin: 20px 0;
-        }
-
-        section#services ul li {
-            margin-bottom: 20px;
-        }
-
-        section#services ul li strong {
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        section#services img {
-            margin-top: 20px;
-            border-radius: 8px;
-            max-width: 100%;
-        }
-
-        footer {
-            background: url('images/header-background2.png') no-repeat center center;
-            background-size: cover;
-            padding: 20px;
-            text-align: center;
-            position: relative;
-        }
-
-        footer .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
-        }
-
-        footer p {
-            position: relative;
-            z-index: 2;
-            color: #fff;
-        }
-
-        /* Contact Button */
-        #contact-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #0077b6; /* Blue color */
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
-        }
-
-        #contact-button img {
-            width: 24px;
-            height: 24px;
-        }
-
-        /* Contact Form */
-        #contact-form-container {
-            display: none; /* Hidden by default */
-            position: fixed;
-            bottom: 80px;
-            right: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            width: 300px;
-            z-index: 1000;
-        }
-
-        #contact-form {
-            padding: 20px;
-        }
-
-        #contact-form .header {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-
-        #contact-form .header img {
-            width: 24px;
-            height: 24px;
-        }
-
-        #contact-form p {
-            font-family: 'Roboto', sans-serif;
-            margin-bottom: 20px;
-        }
-
-        #contact-form form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        #contact-form form label {
-            margin-bottom: 5px;
-            font-family: 'Montserrat', sans-serif
-        }
-
-        #contact-form form input,
-        #contact-form form textarea {
-            margin-bottom: 10px;
-            padding: 10px;
-            font-family: 'Roboto', sans-serif;
-            font-size: 16px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-
-        #contact-form form button {
-            background-color: #0077b6;
-            color: #fff;
-            padding: 10px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        #contact-form form button:hover {
-            background-color: #005f99;
-        }
-    </style>
-    <script>
-        function toggleContactForm() {
-            var formContainer = document.getElementById('contact-form-container');
-            if (formContainer.style.display === 'none' || formContainer.style.display === '') {
-                formContainer.style.display = 'block';
-            } else {
-                formContainer.style.display = 'none';
-            }
-        }
-    </script>
 </head>
 <body>
-    <header>
+    <header style="background: url('images/header-background2.png') no-repeat center center; background-size: cover; color: #fff; padding: 40px 0; text-align: center; position: relative;">
         <div class="overlay"></div>
-        <h1>Usługi</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Strona Główna</a></li>
-                <li><a href="onas.html">O Nas</a></li>
-                <li><a href="uslugi.html">Usługi</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-                <li><a href="realizacje.html">Realizacje</a></li>
+        <h1 style="position: relative; font-family: 'Montserrat', sans-serif; font-size: 36px; margin: 0; padding: 10px 20px; z-index: 2;">
+            Profesjonalna Instalacja Klimatyzacji w Warszawie i okolicach
+        </h1>
+        <nav style="position: relative; z-index: 2;">
+            <ul style="list-style: none; padding: 0; margin: 20px 0 0;">
+                <li style="display: inline; margin: 0 15px;"><a href="index.html" style="color: #fff; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 700; padding: 5px 10px; border-radius: 3px;">Strona Główna</a></li>
+                <li style="display: inline; margin: 0 15px;"><a href="onas.html" style="color: #fff; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 700; padding: 5px 10px; border-radius: 3px;">O Nas</a></li>
+                <li style="display: inline; margin: 0 15px;"><a href="uslugi.html" style="color: #fff; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 700; padding: 5px 10px; border-radius: 3px;">Usługi</a></li>
+                <li style="display: inline; margin: 0 15px;"><a href="kontakt.html" style="color: #fff; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 700; padding: 5px 10px; border-radius: 3px;">Kontakt</a></li>
+                <li style="display: inline; margin: 0 15px;"><a href="realizacje.html" style="color: #fff; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 700; padding: 5px 10px; border-radius: 3px;">Realizacje</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="services">
-        <h2>Nasze Usługi - Klimatyzacja Legionowo</h2>
-        <ul>
-            <li><strong>Instalacja klimatyzacji:</strong> Zapewniamy profesjonalny montaż systemów klimatyzacyjnych w domach, biurach oraz obiektach przemysłowych. Korzystamy z najlepszych urządzeń, które charakteryzują się wysoką wydajnością i energooszczędnością.</li>
-            <li><strong>Serwis i konserwacja:</strong> Oferujemy regularne przeglądy oraz konserwację klimatyzacji, które zapewnią jej długotrwałe i bezawaryjne działanie. Nasze usługi serwisowe obejmują diagnostykę, czyszczenie oraz wymianę zużytych komponentów.</li>
-            <li><strong>Naprawa klimatyzacji:</strong> W przypadku awarii oferujemy szybkie i skuteczne naprawy. Nasi technicy są wyposażeni w nowoczesne narzędzia oraz posiadają szeroką wiedzę, co pozwala im na sprawną identyfikację i usunięcie problemów.</li>
-        </ul>
-        <img src="images/HVAC_technicians_installing_an_air_conditioning_un.png" alt="Nasze usługi - klimatyzacja Legionowo">
+    <section id="home">
+        <h2>Zapewniamy komfort w Twoim domu i biurze</h2>
+        <p>Witamy w ChillZone - Twoim zaufanym partnerze w dziedzinie klimatyzacji. Dążymy do tego, aby Twoje wnętrza były zawsze przyjemne i komfortowe, niezależnie od warunków panujących na zewnątrz. Nasz zespół specjalistów działa na terenie Warszawy i okolic, oferując kompleksowe usługi instalacyjne. Zależy nam na Twoim komforcie, dlatego gwarantujemy szybki i sprawny montaż oraz atrakcyjne ceny. Skontaktuj się z nami już dziś i skorzystaj z bezpłatnej wyceny, która pomoże Ci w podjęciu najlepszej decyzji.</p>
+        <button onclick="window.location.href='kontakt.html'">Poproś o Wycene</button>
+        <div class="center-img-wrapper">
+            <img src="images/main.jpg" alt="Główne zdjęcie" class="center-img">
+        </div>
     </section>
 
-    <footer>
+    <footer style="background: url('images/header-background2.png') no-repeat center center; background-size: cover;">
         <div class="overlay"></div>
-        <p>&copy; 2024 Instalacja Klimatyzacji - ChillZone. Wszelkie prawa zastrzeżone.</p>
+        <p style="position: relative; z-index: 2;">&copy; 2024 Instalacja Klimatyzacji - Warszawa i okolice. Wszelkie prawa zastrzeżone.</p>
     </footer>
-
-    <!-- Contact Button and Form -->
-    <div id="contact-button" onclick="toggleContactForm()">
-        <img src="images/contact-icon.png" alt="Kontakt"> <!-- Użyj nowej ikony -->
-    </div>
-
-    <div id="contact-form-container">
-        <div id="contact-form">
-            <div class="header">
-                <img src="images/chat-icon.png" alt="Chat">
-                <img src="images/phone-icon.png" alt="Phone">
-                <img src="images/info-icon.png" alt="Info">
-            </div>
-            <p>Dzień dobry, nazywam się Katarzyna i chętnie odpowiem na wszystkie Twoje pytania!</p>
-            <form action="https://formspree.io/f/xeojqbwn" method="POST">
-                <label for="name">Imię:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Adres e-mail:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Twoja wiadomość:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button type="submit">Wyślij</button>
-            </form>
-        </div>
-    </div>
 </body>
 </html>
