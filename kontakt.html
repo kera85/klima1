@@ -12,14 +12,17 @@
         body {
             font-family: 'Roboto', sans-serif;
             line-height: 1.6;
+            margin: 0;
+            padding: 0;
             color: #333;
+            background-color: #f4f7f9; /* Light background color for the whole page */
         }
 
         header {
             background: url('images/header-background2.png') no-repeat center center;
             background-size: cover;
             color: #fff;
-            padding: 40px 0;
+            padding: 40px 0; /* Increase padding for better visibility */
             text-align: center;
             position: relative;
         }
@@ -30,15 +33,22 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.3); /* Lighter semi-transparent background */
+            z-index: 1;
         }
 
         header h1 {
             position: relative;
             font-family: 'Montserrat', sans-serif;
-            font-size: 36px;
+            font-size: 36px; /* Increase font size for better visibility */
             margin: 0;
+            display: inline-block;
             padding: 10px 20px;
+            z-index: 2;
+        }
+
+        nav {
+            position: relative;
             z-index: 2;
         }
 
@@ -46,11 +56,10 @@
             list-style: none;
             padding: 0;
             margin: 20px 0 0;
-            display: flex;
-            justify-content: center;
         }
 
         nav ul li {
+            display: inline;
             margin: 0 15px;
         }
 
@@ -61,27 +70,36 @@
             font-weight: 700;
             padding: 5px 10px;
             border-radius: 3px;
-            transition: background 0.3s;
         }
 
-        nav ul li a:hover {
-            background: rgba(255, 255, 255, 0.2);
-        }
-
-        section#contact {
-            padding: 20px;
+        section {
+            padding: 40px 20px;
             text-align: center;
         }
 
-        section#contact h2 {
+        section h2 {
             font-family: 'Montserrat', sans-serif;
-            font-size: 28px;
-            margin-bottom: 20px;
+            margin-top: 0;
+            font-size: 22px;
+            color: #0077b6; /* Deep blue for section titles */
         }
 
-        section#contact p {
+        section p, section ul {
+            font-size: 18px;
+            margin: 20px 0;
+            text-align: left;
             max-width: 800px;
-            margin: auto;
+            margin-left: auto;
+            margin-right: auto;
+            color: #555; /* Slightly darker text color */
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border: 2px solid #0077b6; /* Border around images */
+            border-radius: 8px; /* Rounded corners for images */
         }
 
         section#contact form {
@@ -116,7 +134,7 @@
         }
 
         section#contact form button {
-            background: #007BFF;
+            background: #0077b6;
             color: #fff;
             border: none;
             padding: 10px 20px;
@@ -126,19 +144,16 @@
         }
 
         section#contact form button:hover {
-            background: #0056b3;
-        }
-
-        section#contact img {
-            margin-top: 20px;
-            border-radius: 8px;
+            background: #005f99;
         }
 
         footer {
             background: url('images/header-background2.png') no-repeat center center;
             background-size: cover;
-            padding: 20px;
+            color: #fff;
             text-align: center;
+            padding: 40px 0; /* Adjust padding if needed */
+            font-family: 'Roboto', sans-serif;
             position: relative;
         }
 
@@ -148,52 +163,75 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.3); /* Lighter semi-transparent background */
+            z-index: 1;
         }
 
         footer p {
             position: relative;
             z-index: 2;
-            color: #fff;
         }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="overlay"></div>
-        <h1>Kontakt</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Strona Główna</a></li>
-                <li><a href="onas.html">O Nas</a></li>
-                <li><a href="uslugi.html">Usługi</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-                <li><a href="realizacje.html">Realizacje</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="contact">
-        <h2>Skontaktuj się z nami - Klimatyzacja Legionowo</h2>
-        <p>Skontaktuj się z nami, aby uzyskać więcej informacji na temat naszych usług lub poprosić o wycenę klimatyzacji w Legionowie. Nasz zespół jest gotowy odpowiedzieć na wszystkie Twoje pytania i doradzić najlepsze rozwiązania w zakresie klimatyzacji.</p>
-        <form action="https://formspree.io/f/xeojqbwn" method="POST">
-            <label for="name">Imię i nazwisko:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Wiadomość:</label>
-            <textarea id="message" name="message" rows="10" cols="50" required></textarea>
-            
-            <button type="submit">Wyślij</button>
-        </form>
-        <img src="images/A_friendly_customer_service_representative_talking.png" alt="Kontakt z ChillZone Klimatyzacja Legionowo">
-    </section>
+        /* Contact Button */
+        #contact-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #8BC34A; /* Green color */
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
 
-    <footer>
-        <div class="overlay"></div>
-        <p>&copy; 2024 Instalacja Klimatyzacji - Legionowo i okolice. Wszelkie prawa zastrzeżone.</p>
-    </footer>
-</body>
-</html>
+        #contact-button img {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Contact Form */
+        #contact-form-container {
+            display: none; /* Hidden by default */
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            z-index: 1000;
+        }
+
+        #contact-form {
+            padding: 20px;
+        }
+
+        #contact-form .header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        #contact-form .header img {
+            width: 24px;
+            height: 24px;
+        }
+
+        #contact-form p {
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        #contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #contact-form form label {
+            margin-bottom: 5px;
+            font-family: 'Montserrat', sans-serif
