@@ -3,58 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Skontaktuj się z nami. Firma ChillZone oferuje profesjonalne usługi klimatyzacyjne w Warszawie i okolicach.">
-    <meta name="keywords" content="kontakt, ChillZone, klimatyzacja Warszawa, klimatyzacja okolice">
-    <title>Kontakt - ChillZone</title>
+    <meta name="description" content="Skontaktuj się z nami. Firma ChillZone oferuje profesjonalne usługi klimatyzacyjne w Legionowie i okolicach.">
+    <meta name="keywords" content="kontakt, ChillZone, klimatyzacja Legionowo, klimatyzacja okolice">
+    <title>Kontakt - Klimatyzacja Legionowo | ChillZone</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        form {
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: url('images/header-background2.png') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            position: relative;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            margin: 0;
+            padding: 10px 20px;
+            z-index: 2;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        section#contact {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section#contact h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        section#contact p {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        section#contact form {
             display: flex;
             flex-direction: column;
             max-width: 600px;
             margin: auto;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
-        label {
+        section#contact form label {
             margin-top: 10px;
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
         }
 
-        input, textarea {
+        section#contact form input,
+        section#contact form textarea {
             margin-bottom: 20px;
             padding: 10px;
             font-family: 'Roboto', sans-serif;
             font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
         }
 
-        textarea {
+        section#contact form textarea {
             height: 150px;
-            vertical-align: top;
+        }
+
+        section#contact form button {
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        section#contact form button:hover {
+            background: #0056b3;
+        }
+
+        section#contact img {
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: url('images/header-background2.png') no-repeat center center;
+            background-size: cover;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        footer .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        footer p {
+            position: relative;
+            z-index: 2;
+            color: #fff;
         }
     </style>
 </head>
 <body>
-    <header style="background: url('images/header-background2.png') no-repeat center center; background-size: cover; color: #fff; padding: 40px 0; text-align: center; position: relative;">
+    <header>
         <div class="overlay"></div>
-        <h1 style="position: relative; font-family: 'Montserrat', sans-serif; font-size: 36px; margin: 0; padding: 10px 20px; z-index: 2;">
-            Kontakt
-        </h1>
-        <nav style="position: relative; z-index: 2;">
-            <ul style="list-style: none; padding: 0; margin: 20px 0 0;">
-                <li style="display: inline; margin: 0 15px;"><a href="index.html" style="color: #fff; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 700; padding: 5px 10px; border-radius: 3px;">Strona Główna</a></li>
-                <li style="display: inline; margin: 0 15px;"><a href="onas.html" style="color: #fff; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 700; padding: 5px 10px; border-radius: 3px;">O Nas</a></li>
-                <li style="display: inline; margin: 0 15px;"><a href="uslugi.html" style="color: #fff; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 700; padding: 5px 10px; border-radius: 3px;">Usługi</a></li>
-                <li style="display: inline; margin: 0 15px;"><a href="kontakt.html" style="color: #fff; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 700; padding: 5px 10px; border-radius: 3px;">Kontakt</a></li>
-                <li style="display: inline; margin: 0 15px;"><a href="realizacje.html" style="color: #fff; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 700; padding: 5px 10px; border-radius: 3px;">Realizacje</a></li>
+        <h1>Kontakt</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="onas.html">O Nas</a></li>
+                <li><a href="uslugi.html">Usługi</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="realizacje.html">Realizacje</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="contact">
-        <h2>Skontaktuj się z nami</h2>
-        <p>Skontaktuj się z nami, aby uzyskać więcej informacji na temat naszych usług lub poprosić o wycenę. Nasz zespół jest gotowy odpowiedzieć na wszystkie Twoje pytania i doradzić najlepsze rozwiązania w zakresie klimatyzacji.</p>
+        <h2>Skontaktuj się z nami - Klimatyzacja Legionowo</h2>
+        <p>Skontaktuj się z nami, aby uzyskać więcej informacji na temat naszych usług lub poprosić o wycenę klimatyzacji w Legionowie. Nasz zespół jest gotowy odpowiedzieć na wszystkie Twoje pytania i doradzić najlepsze rozwiązania w zakresie klimatyzacji.</p>
         <form action="https://formspree.io/f/xeojqbwn" method="POST">
             <label for="name">Imię i nazwisko:</label>
             <input type="text" id="name" name="name" required>
@@ -67,12 +188,12 @@
             
             <button type="submit">Wyślij</button>
         </form>
-        <img src="images/A_friendly_customer_service_representative_talking.png" alt="Kontakt z ChillZone">
+        <img src="images/A_friendly_customer_service_representative_talking.png" alt="Kontakt z ChillZone Klimatyzacja Legionowo">
     </section>
 
-    <footer style="background: url('images/header-background2.png') no-repeat center center; background-size: cover;">
+    <footer>
         <div class="overlay"></div>
-        <p style="position: relative; z-index: 2;">&copy; 2024 Instalacja Klimatyzacji - Warszawa i okolice. Wszelkie prawa zastrzeżone.</p>
+        <p>&copy; 2024 Instalacja Klimatyzacji - Legionowo i okolice. Wszelkie prawa zastrzeżone.</p>
     </footer>
 </body>
 </html>
