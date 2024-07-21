@@ -3,66 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Skontaktuj się z nami. Firma ProAir Klimatyzacja oferuje profesjonalne usługi klimatyzacyjne w Legionowie i okolicach.">
-    <meta name="keywords" content="kontakt, ProAir Klimatyzacja, klimatyzacja Legionowo, klimatyzacja okolice">
+    <meta name="description" content="Profesjonalna instalacja klimatyzacji w Legionowie i okolicach. Skontaktuj się z nami.">
+    <meta name="keywords" content="klimatyzacja Legionowo, kontakt, instalacja klimatyzacji, montaż klimatyzacji">
     <title>Kontakt - ProAir Klimatyzacja</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header style="background: url('images/header-background2.png') no-repeat center center; background-size: cover; color: #fff; padding: 40px 0; text-align: center; position: relative;">
-        <div class="overlay"></div>
-        <h1 style="position: relative; font-family: 'Open Sans', sans-serif; font-size: 36px; margin: 0; padding: 10px 20px; z-index: 2;">
-            Kontakt
-        </h1>
-        <nav style="position: relative; z-index: 2;">
-            <ul style="list-style: none; padding: 0; margin: 20px 0 0;">
-                <li style="display: inline; margin: 0 15px;"><a href="index.html" style="color: #fff; text-decoration: none; font-family: 'Open Sans', sans-serif; font-weight: 700; padding: 5px 10px; border-radius: 3px;">Strona Główna</a></li>
-                <li style="display: inline; margin: 0 15px;"><a href="onas.html" style="color: #fff; text-decoration: none; font-family: 'Open Sans', sans-serif; font-weight: 700; padding: 5px 10px; border-radius: 3px;">O Nas</a></li>
-                <li style="display: inline; margin: 0 15px;"><a href="uslugi.html" style="color: #fff; text-decoration: none; font-family: 'Open Sans', sans-serif; font-weight: 700; padding: 5px 10px; border-radius: 3px;">Usługi</a></li>
-                <li style="display: inline; margin: 0 15px;"><a href="kontakt.html" style="color: #fff; text-decoration: none; font-family: 'Open Sans', sans-serif; font-weight: 700; padding: 5px 10px; border-radius: 3px;">Kontakt</a></li>
+    <header>
+        <h1>Kontakt</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="onas.html">O Nas</a></li>
+                <li><a href="uslugi.html">Usługi</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="contact">
-        <h2>Zainteresowany montażem klimatyzacji?</h2>
-        <p>Zostaw swoje dane, a nasz konsultant przygotuje ofertę dopasowaną do Twoich potrzeb.</p>
-        <form action="https://formspree.io/f/xeojqbwn" method="POST" class="contact-form">
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="name">Imię <span style="color: red;">*</span></label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="city">Miejscowość (+dzielnica) <span style="color: red;">*</span></label>
-                    <input type="text" id="city" name="city" required>
-                </div>
+        <div class="background-image-wrapper">
+            <img src="images/main.jpg" alt="Kontakt zdjęcie" class="background-image">
+            <div class="content-wrapper">
+                <h2>Skontaktuj się z nami</h2>
+                <p>Jeśli masz pytania dotyczące naszych usług lub chcesz uzyskać darmową wycenę, skontaktuj się z nami za pomocą poniższego formularza lub zadzwoń pod numer telefonu.</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Imię i nazwisko:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Wiadomość:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Wyślij</button>
+                </form>
             </div>
-            
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="email">Adres e-mail <span style="color: red;">*</span></label>
-                    <input type="email" id="email" name="email" required placeholder="jan.kowalski@poczta.pl">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Numer telefonu <span style="color: red;">*</span></label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-            </div>
-            
-            <label for="message">Treść <span style="color: red;">*</span></label>
-            <textarea id="message" name="message" rows="10" cols="50" required placeholder="Napisz wiadomość"></textarea>
-
-            <button type="submit">Wyślij</button>
-        </form>
+        </div>
     </section>
 
-    <footer style="background: url('images/header-background2.png') no-repeat center center; background-size: cover;">
-        <div class="overlay"></div>
-        <p style="position: relative; z-index: 2;">&copy; 2024 Instalacja Klimatyzacji - Legionowo i okolice. Wszelkie prawa zastrzeżone.</p>
+    <footer>
+        <p>&copy; 2024 ProAir Klimatyzacja - Legionowo i okolice. Wszelkie prawa zastrzeżone.</p>
     </footer>
+
+    <button class="floating-button" onclick="window.location.href='kontakt.html'">
+        <i class="fas fa-envelope"></i>
+    </button>
 
     <script src="js/modal.js"></script>
 </body>
