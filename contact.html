@@ -17,68 +17,28 @@
       gtag('js', new Date());
       gtag('config', 'AW-16683705031');
     </script>
-    
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
-        .navbar {
-            background-color: #ffffff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .hero {
-            background: url('images/image4.png') no-repeat center center;
-            background-size: cover;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 20px;
-        }
-        .content {
-            background: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border-radius: 10px;
-        }
-    </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html">
-            <img src="images/IconOnly.png" alt="Air Pro - logo" class="icon-only">
-        </a>
-    </nav>
-    
-    <!-- Hero Section -->
-    <div class="hero">
-        <div class="content">
-            <h3>Jesteśmy tu, aby pomóc Ci znaleźć najlepsze rozwiązanie.</h3>
-            <p>Mail: <a href="mailto:klimatyzacja.airpro@gmail.com">klimatyzacja.airpro@gmail.com</a></p>
-            
-            <!-- Formularz -->
-            <form id="contactForm" action="https://formspree.io/f/xeojqbwn" method="POST">
-                <div class="form-group">
-                    <input type="text" name="name" class="form-control" placeholder="Imię" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" class="form-control" placeholder="Adres e-mail" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="subject" class="form-control" placeholder="Temat" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" class="form-control" placeholder="Twoje zapytanie" required></textarea>
-                </div>
-                <div class="form-group form-check text-left">
-                    <input type="checkbox" class="form-check-input" id="consentCheck" required>
-                    <label class="form-check-label" for="consentCheck">Wyrażam zgodę na kontakt.*</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Wyślij wiadomość</button>
-            </form>
+    <!-- Formularz -->
+    <form id="contactForm" action="https://formspree.io/f/xeojqbwn" method="POST">
+        <div class="form-group">
+            <input type="text" name="name" class="form-control" placeholder="Imię" required>
         </div>
-    </div>
+        <div class="form-group">
+            <input type="email" name="email" class="form-control" placeholder="Adres e-mail" required>
+        </div>
+        <div class="form-group">
+            <input type="text" name="subject" class="form-control" placeholder="Temat" required>
+        </div>
+        <div class="form-group">
+            <textarea name="message" class="form-control" placeholder="Twoje zapytanie" required></textarea>
+        </div>
+        <div class="form-group form-check text-left">
+            <input type="checkbox" class="form-check-input" id="consentCheck" required>
+            <label class="form-check-label" for="consentCheck">Wyrażam zgodę na kontakt.*</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Wyślij wiadomość</button>
+    </form>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
